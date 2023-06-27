@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header h1{
+    margin-right: 50px;
+    margin-top: 10px;
+}
+header ul{
+    display:flex;
+}
+
+header li {
+    list-style: none;
+    margin-right:15px;
+    color:#9893A3 ;
+    font-weight:600; 
+    cursor: pointer;
+  
+}
+
+header  li::after{
+    content: '';
+
+    width: 0%; 
+    height: 3px;
+    color:#3f3f3f;
+    background: #545457;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+   
+}
+header li:hover::after{
+    width:100%;
+    color:#5a5961;
+  
+}
+.content{
+    display: grid;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: content-box;
+    padding: 40px;
+    margin-top: 100px;
+}
+.content .card {
+    position: relative;
+    border: none;
+    border-radius: none;
+}
+
+
+body h2 {
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    padding: 35px;
+    margin-top: 20px;
+}
